@@ -27,7 +27,8 @@ for row_index in range(1, MIC_CC.nrows):
 		dict[keys[col_index]] = MIC_CC.cell_value(row_index, col_index)
 	dict_list.append(dict)
  
-# Serialize the list of dicts to JSON
+# Serialize the list of dicts to JSON as a string
+# j is a json string now
 j = json.dumps(dict_list)
 
 # Write to file to data.json
